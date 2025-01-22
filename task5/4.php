@@ -25,6 +25,7 @@ if (isset($_POST['todo']) && !empty($_POST['todo'])) {
     </form>
     <ul>
         <?php
+        
         foreach ($_SESSION['list'] as $item) {
             echo "<li>$item</li>";
         }
